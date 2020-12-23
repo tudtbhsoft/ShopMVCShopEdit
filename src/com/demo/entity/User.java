@@ -23,7 +23,7 @@ public class User {
 	@Column(name = "username")
 	private String username;
 
-	@NotBlank(message = "Không được để khống mật khẩu")
+	@NotBlank(message = "Không được để trống mật khẩu")
 	@Column(name = "password")
 	private String password;
 

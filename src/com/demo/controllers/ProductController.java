@@ -64,7 +64,7 @@ public class ProductController {
 	public String saveProduct(@Valid @ModelAttribute("product") Product product, BindingResult result,
 			RedirectAttributes redirect) {
 		if (result.hasErrors()) {
-			return "new_product";
+			return "newProduct";
 		}
 		productService.save(product);
 		redirect.addFlashAttribute("message", "Thêm thành công sản phẩm id: " + product.getId_product());
